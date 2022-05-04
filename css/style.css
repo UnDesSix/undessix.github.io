@@ -1,0 +1,230 @@
+@font-face {
+	font-family: Kontanter-Bold;
+	src: url("../font/Kontanter-Bold.woff") format("woff");
+}
+
+/* .container {
+  background-color: yellow;
+  border: solid #212529;
+} */
+
+.logo {
+	font-family: "Kontanter-Bold";
+	font-size: 50px;
+	padding: 0;
+	margin-right: 5%;
+}
+
+@media (max-width: 500px) {
+  .console-container {
+ 
+    font-family:Khula;
+    text-align:center;
+    font-size: min(8vw, 80px);
+    height: 30vh;
+    width: 100%;
+    display:block;
+    padding-top: 10vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    color:#212529;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+  
+    /* background-color: red; */
+  }
+
+}
+
+@media (min-width: 501px) {
+  .console-container {
+    font-family:Khula;
+    text-align:center;
+    font-size: min(7vw, 70px);
+    height: 50vh;
+    width: 100%;
+    display:block;
+    padding-top: 10vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    color:#212529;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0;
+  
+    /* background-color: red; */
+  }
+}
+  
+.console-underscore {
+  display:inline-block;
+ position:relative;
+ top:-0.14em;
+ left:10px;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    padding-top: 25px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media (min-width: 1081px) {
+  .container {
+    padding-top: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+.container-center {
+  text-align: center;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+
+	border-radius: 50%;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo-network {
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+
+.container ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+  position: relative;
+}
+
+.container ul:before{
+  content:"";
+  display: inline-block;
+  width: 5px;
+  background: #212529;
+  position: absolute;
+  left:2px;
+  top:5px;
+  height: calc(100% - 10px );
+}
+
+.container li{
+  position: relative;
+  padding-left: 15px;
+  margin-bottom:15px;
+}
+
+.container li:before{
+  content:"";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: white;
+  position: absolute;
+  left:-10px;
+  top:5px;
+  border: solid 5px #303030;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.progress_bg {
+  border-radius: 5px;
+  width: 100%;
+  height: 15px;
+  background: #34495e73;
+  margin-bottom: 15px;
+}
+
+.progress_fg {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 15px;
+
+  background: #212529;
+  text-align: right;
+  font-size: 15px;
+  font-display: auto;
+  color: white;
+}
+
+._90{
+  width: 90%;
+}
+
+._80{
+  width: 80%;
+}
+
+._70{
+  width: 70%;
+}
+
+._60{
+  width: 60%;
+}
+
+._50{
+  width: 50%;
+}
+
+._40{
+  width: 40%;
+}
+
+._30{
+  width: 30%;
+}
+
+._20{
+  width: 20%;
+}
+
+._10{
+  width: 10%;
+}
+
+.date {
+  font-size: 18px;
+  padding-top: 8px;
+  margin: 0;
+
+}
+
+.company {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+
+.place {
+  font-size: 18px;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+
+.mission {
+  margin: 0;
+  padding: 0;
+}
