@@ -3,22 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      :root {
-        --color-1: white;
-        --color-2: red;
-        --color-3: rgba(255, 255, 255, 0.55);
-        --color-4: rgba(255, 255, 255, 0.75);
-        --color-5: rgba(255, 255, 255, 0.25);
-        --color-6: rgba(255, 255, 255, 0.1);
-        --bg-color-1: 33, 37, 41;
-      }
-    </style>
+
+    <link rel="icon" type="image/png" href="../images/ico.png" />
+    <link href="style.css" rel="stylesheet">
     <link href="navbar-dark.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+
     <!-- <link href="../css/bootstrap.min.css.map" rel="stylesheet"> -->
   </head>
-  <body>
+  <body id="body">
     <nav class="navbar navbar-expand-lg navbar-theme bg-theme">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -50,9 +43,9 @@
         </div>
       </div>
     </nav>
-    HOME
-    <script></script>
+    <button onclick="changeTheme()">DARK</button>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="my_js.js"></script>
 
   </body>
 </html>
