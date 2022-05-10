@@ -34,20 +34,16 @@
 .navbar-theme .navbar-text a:focus {
   color: var(--color-1);
 }
-
 .bg-theme {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bg-color-1), var(--bs-bg-opacity)) !important;
 }
-
 .navbar-nav > li > .dropdown-menu {
   background-color: var(--bg-color-2);
 }
-
 .navbar-nav > li > .dropdown-menu a{
   color: var(--color-3);
 }
-
 .navbar-nav > li > .dropdown-menu a:hover {
   color: var(--color-2);
   background-color: transparent;

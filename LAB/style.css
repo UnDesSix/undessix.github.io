@@ -9,6 +9,6 @@
   --bg-color-2: rgb(32, 33, 34);
 }
 
-#body {
+.body {
   background-color: var(--bg-color-2);
 }

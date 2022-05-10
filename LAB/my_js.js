@@ -6,7 +6,6 @@ var colorsLight = ["rgba(0, 0, 0, 0.9)", "rgba(0, 0, 0, 0.9)", "rgba(0, 0, 0, 0.
 function changeTheme() {
     let root = document.querySelector(':root');
     
-    // console.log(getComputedStyle(root).getPropertyValue(properties[0]));
     if (getComputedStyle(root).getPropertyValue(properties[0]) == 'white') {
       for (let i = 0; i < properties.length; i++) {
         root.style.setProperty(properties[i], colorsLight[i]);
@@ -25,7 +24,6 @@ function changeTheme() {
   function applyTheme(theme) {
     let root = document.querySelector(':root');
     
-    // console.log(getComputedStyle(root).getPropertyValue(properties[0]));
     if (theme == 'dark') {
       for (let i = 0; i < properties.length; i++) {
         root.style.setProperty(properties[i], colorsDark[i]);
@@ -56,14 +54,3 @@ function addCookie(ckey, cvalue) {
  }
 
  window.onload = restoreCookies();
-
-//  function removeCookies(key_to_del) {
-//     var res = document.cookie;
-//     var multiple = res.split(";");
-//     for(var i = 0 ; i < multiple.length; i++) {
-//         var key = multiple[i].split("=");
-//         key[0] = parseInt(key[0]);
-//         if (key[0] == key_to_del)
-//             document.cookie=key[0]+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; SameSite=None; Secure";
-//     }
-//  }
