@@ -20,22 +20,22 @@
   display: flex;
   flex-direction: row;
 }
-.labels-container #py {
+.labels-container .py {
   background-color: #f2c83f;
 }
-.labels-container #ts {
+.labels-container .ts {
   background-color: #2f73bc9c;
 }
-.labels-container #postgres {
+.labels-container .postgres {
   background-color: #c9cfa9;
 }
-.labels-container #docker {
+.labels-container .docker {
   background-color: #4a00585b;
 }
-.labels-container #c {
+.labels-container .c {
   background-color: #808080;
 }
-.labels-container #cpp {
+.labels-container .cpp {
   background-color: #808080a8;
 }
 .portfolio-container > p {
