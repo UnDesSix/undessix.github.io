@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="icon" type="image/png" href="images/ico.png" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90202f6dd4.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="body">
+    <nav class="navbar navbar-expand-lg navbar-theme bg-theme">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="en/home.html">ML</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa-solid fa-bars bars-colors"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="en/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="en/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="en/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Download resume
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="">English</a></li>
+                <li><a class="dropdown-item" href="">French</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li>
+                <div class="language-container">
+                  <a class="nav-link" id="fr" aria-current="page" href="fr/home.html">FR</a>
+                  <p id="separator"> | </p>
+                  <a class="nav-link active" id="en" aria-current="page" href="en/home.html">EN</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <i class="fa-solid fa-circle-half-stroke" onclick="changeTheme(1)" style="color: var(--color-1)"></i>
+                </a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class='console-container'>
+      <span id='text'></span><div class='console-underscore' id='console'>&#95;</div>
+    </div>
+    <div class="container">
+      <div class="container-button" style="display: flex; flex-direction: row; justify-content: center;">
+        <a href="en/about.html" class="button-28" style="display: flex; justify-content: center; align-items: center;">About me</a>
+        <a href="en/portfolio.html" class="button-28" style="display: flex; justify-content: center; align-items: center;">Portfolio</a>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/changeTheme.js"></script>
+    <script src="js/displayWelcome.js"></script>
+    <script src="js/tawk.js"></script>
+  </body>
+</html>
