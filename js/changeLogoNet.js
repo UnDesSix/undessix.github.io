@@ -9,14 +9,14 @@ function changeNetworkLogo (){
 
     console.log(logos)
     if (getCookie('color-theme') == 'dark') {
-        logos[0].setAttribute("src", "images/github-brands-white.svg");
-        logos[1].setAttribute("src", "images/linkedin-brands-white.svg");
-        logos[2].setAttribute("src", "images/42_Logo_white.svg");
+        logos[0].setAttribute("src", "../images/github-brands-white.svg");
+        logos[1].setAttribute("src", "../images/linkedin-brands-white.svg");
+        logos[2].setAttribute("src", "../images/42_Logo_white.svg");
     }
     else {
-        logos[0].setAttribute("src", "images/github-brands.svg");
-        logos[1].setAttribute("src", "images/linkedin-brands.svg");
-        logos[2].setAttribute("src", "images/42_Logo.svg");
+        logos[0].setAttribute("src", "../images/github-brands.svg");
+        logos[1].setAttribute("src", "../images/linkedin-brands.svg");
+        logos[2].setAttribute("src", "../images/42_Logo.svg");
     }
 }
 
