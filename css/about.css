@@ -1,0 +1,130 @@
+/* ABOUT  */
+
+.avatar {
+	width: 150px;
+	height: 150px;
+
+	border-radius: 50%;
+	box-shadow: 0 5px 15px 0px var(--color-5);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo-network {
+  color:  var(--color-1);
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+.container .subway-ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+  position: relative;
+}
+.container .subway-ul:before{
+  content:"";
+  display: inline-block;
+  width: 5px;
+  background: var(--color-1);
+  position: absolute;
+  left:2px;
+  top:5px;
+  height: calc(100% - 10px );
+}
+.container .subway-il{
+  position: relative;
+  padding-left: 15px;
+  margin-bottom:15px;
+}
+.container .subway-il:before{
+  content:"";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: var(--bg-color-2);
+  position: absolute;
+  left:-10px;
+  top:5px;
+  border: solid 5px var(--color-1);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.mission-ul {
+  padding-left: 16px;
+}
+.progress_bg {
+  border-radius: 5px;
+  width: 100%;
+  height: 15px;
+  background: var(--color-3);
+  margin-bottom: 15px;
+}
+.progress_fg {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 15px;
+
+  background: var(--color-1);
+  text-align: right;
+  font-size: 15px;
+  font-display: auto;
+  color: white;
+}
+._90{
+  width: 90%;
+}
+._80{
+  width: 80%;
+}
+._70{
+  width: 70%;
+}
+._60{
+  width: 60%;
+}
+._50{
+  width: 50%;
+}
+._40{
+  width: 40%;
+}
+._30{
+  width: 30%;
+}
+._20{
+  width: 20%;
+}
+._10{
+  width: 10%;
+}
+.date {
+  font-size: 18px;
+  padding-top: 8px;
+  margin: 0;
+}
+.company {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.place {
+  font-size: 18px;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+.mission {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container > div {
+  color: var(--color-1);
+}

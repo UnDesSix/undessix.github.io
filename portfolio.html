@@ -4,21 +4,20 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
+    <title>About</title>
+    <link rel="icon" type="image/png" href="images/ico.png" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/button.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/90202f6dd4.js" crossorigin="anonymous"></script>
-    <title>Hello, world!</title>
   </head>
-  <body>
-    <!-- Bootstrap NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body class="body">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-theme bg-theme">
       <div class="container-fluid">
-        <a class="navbar-brand logo" style="color: #212529;" href="index.html">ML</a>
+        <a class="navbar-brand logo" href="index.html">ML</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="fa-solid fa-bars bars-colors"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -26,7 +25,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about-me.html">About me</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="portfolio.html">Portfolio</a>
@@ -43,9 +42,16 @@
           </ul>
           <form class="d-flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li>
+                <div class="language-container">
+                  <a class="nav-link" id="fr" aria-current="page" href="#">FR</a>
+                  <p id="separator"> | </p>
+                  <a class="nav-link active" id="en" aria-current="page" href="#">EN</a>
+                </div>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">
-                  <i class="fa-solid fa-moon" style="color: #212529; padding-right: 5vw;"></i>
+                  <i class="fa-solid fa-circle-half-stroke" onclick="changeTheme(0)" style="color: var(--color-1)"></i>
                 </a>
               </li>
             </ul>
@@ -53,169 +59,133 @@
         </div>
       </div>
     </nav>
-    <!-- School -->
-    <div class="container">
-      <h1>VirtuaData</h1>
-      <div style="display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: row;">
-          <div class="stack" style="background-color: #f2c83f;">Python</div>
-          <div class="stack" style="background-color: #2f73bc9c;">TypeScript</div>
-          <div class="stack" style="background-color: #c9cfa9;">PostgreSQL</div>
-          <div class="stack" style="background-color: #4a00585b;">Docker</div>
-        </div>
-        <div>
-          <p style="text-align: justify;">
+       <div class="container">
+        <h1>VirtuaData</h1>
+        <div class="portfolio-container">
+          <div class="labels-container">
+            <div class="label" id="py">Python</div>
+            <div class="label" id="ts"">TypeScript</div>
+            <div class="label" id="postgres"">PostgreSQL</div>
+            <div class="label" id="docker">Docker</div>
+          </div>
+          <p>
             The objective of this project is to set up a site with several docker containers.
             The site will aim to be an analysis tool for the game <a href="https://virtuafoot.com">www.virtuafoot.com</a>.
-            Currently the project is divided into 5 containers:<br>
-            - NGINX Server<br>
-            - Front End<br>
-            - Back End<br>
-            - DataBase<br>
-            - Container that runs the scrapping script<br>
+            Currently the project is divided into 5 containers:
           </p>
-        </div>
-        <div style="text-align: center;">
-          <img src="https://camo.githubusercontent.com/df99e790a6f6c6f899e5b3eb8a9458e04c27140431a8eaac8fbaddb2d455a6d4/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6864734c774d6130453570584f38417030712f67697068792e676966" style="width: min(60vw, 600px); "></img>
-        </div>
-        <div style="margin-top: 15px;">
-          <img src="images/github-brands.svg" class="logo-network" style="width: 15px; padding: 0px;">
-          <a href="https://github.com/UnDesSix/so_long_42" style="color: black; font-size: small;">https://github.com/UnDesSix/so_long_42</a>
+          <ul>
+            <li>NGINX Server</li>
+            <li>Front End</li>
+            <li>Back End</li>
+            <li>DataBase</li>
+            <li>Container that runs the scrapping script</li>
+          </ul>
+          <div class="project-img-container">
+            <img class="project-img" src="" alt="">
+          </div>
+          <div class="project-link-container">
+            <i class="fa-brands fa-github" style="color: var(--color-1);"></i>
+            <a class="project-link" href="https://github.com/UnDesSix/so_long_42">https://github.com/UnDesSix/so_long_42</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <h1>LostArk fishing bot</h1>
-      <div style="display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: row;">
-          <div class="stack">C++</div>
-          <div class="stack" style="font-style: italic; font-weight: normal;">OpenCV</div>
-        </div>
-        <div>
-          <p style="text-align: justify;">
+      <div class="container">
+        <h1>LostArk fishing bot</h1>
+        <div class="portfolio-container">
+          <div class="labels-container">
+            <div class="label" id="cpp">C++</div>
+          </div>
+          <p>
             My first Windows-based program for automatic fishing.
           </p>
+          <div class="project-img-container">
+            <img class="project-img" src="https://www.gamersheroes.com/wp-content/uploads/2022/02/How-To-Fish-In-Lost-Ark.jpg" alt="Screenchor from LostArk">
+          </div>
+          <div class="project-link-container">
+            <i class="fa-brands fa-github" style="color: var(--color-1);"></i>
+            <a class="project-link" href="https://github.com/UnDesSix/so_long_42">https://github.com/UnDesSix/so_long_42</a>
+          </div>
         </div>
-        <div style="text-align: center;">
-          <img src="https://www.gamersheroes.com/wp-content/uploads/2022/02/How-To-Fish-In-Lost-Ark.jpg" style="width: min(60vw, 600px); "></img>
-        </div>
-        <div style="margin-top: 15px;">
-          <img src="images/github-brands.svg" class="logo-network" style="width: 15px; padding: 0px;">
-          <a href="https://github.com/UnDesSix/so_long_42" style="color: black; font-size: small;">https://github.com/UnDesSix/so_long_42</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <h1>Webserv</h1>
-      <div style="display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: row;">
-          <div class="stack">C</div>
-          <div class="stack">C++</div>
-        </div>
-        <div>
-          <p style="text-align: justify;">
+      </div>      
+      <div class="container">
+        <h1>Webserv</h1>
+        <div class="portfolio-container">
+          <div class="labels-container">
+            <div class="label" id="cpp">C++</div>
+            <div class="label" id="c">C</div>
+          </div>
+          <p>
             42 project, recoding our own web server in C++. A program capable of running an HTTP server, handling requests, and parsing configuration files.
           </p>
-        </div>
-        <div style="text-align: center;">
-          <img src="https://camo.githubusercontent.com/df99e790a6f6c6f899e5b3eb8a9458e04c27140431a8eaac8fbaddb2d455a6d4/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6864734c774d6130453570584f38417030712f67697068792e676966" style="width: min(60vw, 600px); "></img>
-        </div>
-        <div style="margin-top: 15px;">
-          <img src="images/github-brands.svg" class="logo-network" style="width: 15px; padding: 0px;">
-          <a href="https://github.com/UnDesSix/so_long_42" style="color: black; font-size: small;">https://github.com/UnDesSix/so_long_42</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <h1>SoLong</h1>
-      <div style="display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: row;">
-          <div class="stack">C</div>
-        </div>
-        <div>
-          <p style="text-align: justify;">
-            The objective of this project is to set up a site with several docker containers.
-            The site will aim to be an analysis tool for the game https://virtuafoot.com.
-            Currently the project is divided into 5 containers:
-            - NGINX Server
-            - Front End
-            - Back End
-            - DataBase
-            - Container that runs the scrapping script
-
-          </p>
-        </div>
-        <div style="text-align: center;">
-          <img src="https://camo.githubusercontent.com/df99e790a6f6c6f899e5b3eb8a9458e04c27140431a8eaac8fbaddb2d455a6d4/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6864734c774d6130453570584f38417030712f67697068792e676966" style="width: min(60vw, 600px); "></img>
-        </div>
-        <div style="margin-top: 15px;">
-          <img src="images/github-brands.svg" class="logo-network" style="width: 15px; padding: 0px;">
-          <a href="https://github.com/UnDesSix/so_long_42" style="color: black; font-size: small;">https://github.com/UnDesSix/so_long_42</a>
+          <div class="project-img-container">
+            <img class="project-img" src="" alt="">
+          </div>
+          <div class="project-link-container">
+            <i class="fa-brands fa-github" style="color: var(--color-1);"></i>
+            <a class="project-link" href="https://github.com/UnDesSix/so_long_42">https://github.com/UnDesSix/so_long_42</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <h1>MiniRT</h1>
-      <div style="display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: row;">
-          <div class="stack">C</div>
-        </div>
-        <div>
-          <p style="text-align: justify;">
+      <div class="container">
+        <h1>MiniRT</h1>
+        <div class="portfolio-container">
+          <div class="labels-container">
+            <div class="label" id="c">C</div>
+          </div>
+          <p>
             This project is an introduction to the beautiful world of Raytracing.
           </p>
-        </div>
-        <div style="text-align: center;">
-          <img src="https://camo.githubusercontent.com/df99e790a6f6c6f899e5b3eb8a9458e04c27140431a8eaac8fbaddb2d455a6d4/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6864734c774d6130453570584f38417030712f67697068792e676966" style="width: min(60vw, 600px); "></img>
-        </div>
-        <div style="margin-top: 15px;">
-          <img src="images/github-brands.svg" class="logo-network" style="width: 15px; padding: 0px;">
-          <a href="https://github.com/UnDesSix/so_long_42" style="color: black; font-size: small;">https://github.com/UnDesSix/so_long_42</a>
+          <div class="project-img-container">
+            <img class="project-img" src="" alt="">
+          </div>
+          <div class="project-link-container">
+            <i class="fa-brands fa-github" style="color: var(--color-1);"></i>
+            <a class="project-link" href="https://github.com/UnDesSix/so_long_42">https://github.com/UnDesSix/so_long_42</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <h1>MiniShell</h1>
-      <div style="display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: row;">
-          <div class="stack">C</div>
+      <div class="container">
+        <h1>MiniShell</h1>
+        <div class="portfolio-container">
+          <div class="labels-container">
+            <div class="label" id="c">C</div>
+          </div>
+          <p>
+            42 project, recoding our own little bash. A program capable of parsing a prompt and launching executables with arguments, along with a few built-in functions.
+          </p>
+          <div class="project-img-container">
+            <img class="project-img" src="" alt="">
+          </div>
+          <div class="project-link-container">
+            <i class="fa-brands fa-github" style="color: var(--color-1);"></i>
+            <a class="project-link" href="https://github.com/UnDesSix/so_long_42">https://github.com/UnDesSix/so_long_42</a>
+          </div>
         </div>
-        <div>
-          <p style="text-align: justify;">
+      </div>
+      <div class="container">
+        <h1>SoLong</h1>
+        <div class="portfolio-container">
+          <div class="labels-container">
+            <div class="label" id="c">C</div>
+          </div>
+          <p>
             This project is a small 2D game with minilibx (graphic library made by 42 School).
           </p>
-        </div>
-        <div style="text-align: center;">
-          <img src="https://camo.githubusercontent.com/df99e790a6f6c6f899e5b3eb8a9458e04c27140431a8eaac8fbaddb2d455a6d4/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6864734c774d6130453570584f38417030712f67697068792e676966" style="width: min(60vw, 600px); "></img>
-        </div>
-        <div style="margin-top: 15px;">
-          <img src="images/github-brands.svg" class="logo-network" style="width: 15px; padding: 0px;">
-          <a href="https://github.com/UnDesSix/so_long_42" style="color: black; font-size: small;">https://github.com/UnDesSix/so_long_42</a>
+          <div class="project-img-container">
+            <img class="project-img" src="https://camo.githubusercontent.com/df99e790a6f6c6f899e5b3eb8a9458e04c27140431a8eaac8fbaddb2d455a6d4/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6864734c774d6130453570584f38417030712f67697068792e676966" alt="">
+          </div>
+          <div class="project-link-container">
+            <i class="fa-brands fa-github" style="color: var(--color-1);"></i>
+            <a class="project-link" href="https://github.com/UnDesSix/so_long_42">https://github.com/UnDesSix/so_long_42</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <footer style="margin-top: 10vh; height: 5vh; color: #212529; padding-bottom: 1vh; font-size: 10px; text-align: center; display: flex; flex-direction: column; justify-content: end;">
+    <footer>
       &copy; Matthieu L. - All Rights Reserved
     </footer>
-  <!--Scripts-->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/626e2e0fb0d10b6f3e702154/1g24ro7ue';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/changeTheme.js"></script>
+    <script src="js/tawk.js"></script>
+    <script src="js/changeLogoNet.js"></script>
   </body>
 </html>

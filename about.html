@@ -4,20 +4,20 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
+    <title>About</title>
+    <link rel="icon" type="image/png" href="images/ico.png" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/90202f6dd4.js" crossorigin="anonymous"></script>
-    <title>Hello, world!</title>
   </head>
-  <body>
-    <!-- Bootstrap NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body class="body">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-theme bg-theme">
       <div class="container-fluid">
-        <a class="navbar-brand logo" style="color: #212529;" href="index.html">ML</a>
+        <a class="navbar-brand logo" href="index.html">ML</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="fa-solid fa-bars bars-colors"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -25,7 +25,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="about-me.html">About</a>
+              <a class="nav-link active" href="about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -42,9 +42,16 @@
           </ul>
           <form class="d-flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li>
+                <div class="language-container">
+                  <a class="nav-link" id="fr" aria-current="page" href="#">FR</a>
+                  <p id="separator"> | </p>
+                  <a class="nav-link active" id="en" aria-current="page" href="#">EN</a>
+                </div>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">
-                  <i class="fa-solid fa-moon" style="color: #212529; padding-right: 5vw;"></i>
+                  <i class="fa-solid fa-circle-half-stroke" onclick="changeTheme(0)" style="color: var(--color-1)"></i>
                 </a>
               </li>
             </ul>
@@ -52,18 +59,18 @@
         </div>
       </div>
     </nav>
-    <!-- Picture -->
+    <!-- PICTURE -->
     <div class="container container-center">
-      <img src="images/profile.jpg" class="avatar">
+      <img src="images/profile.jpg" class="avatar" alt="a man sitting on the Great Wall">
     </div>
-    <!-- Networks -->
+    <!-- NETWORKS -->
     <div class="container container-center">
-      <a href="https://github.com/UnDesSix" target="_blank"><img src="images/github-brands.svg" class="logo-network"></a>
-      <a href="https://www.linkedin.com/in/matthieu-larboullet-241108114/" target="_blank"><img src="images/linkedin-brands.svg" class="logo-network"></a>
-      <a href="https://profile.intra.42.fr/users/mlarboul" target="_blank"><img src="images/42_Logo.svg" class="logo-network"></a>
+      <a href="https://github.com/UnDesSix" target="_blank"><img src="images/github-brands-white.svg" class="logo-network" alt="github logo"></a>
+      <a href="https://www.linkedin.com/in/matthieu-larboullet-241108114/" target="_blank"><img src="images/linkedin-brands-white.svg" class="logo-network" alt="linkedin logo"></a>
+      <a href="https://profile.intra.42.fr/users/mlarboul" target="_blank"><img src="images/42_Logo_white.svg" class="logo-network" alt="42 logo"></a>
       <!-- <img src="images/profile.jpg" class="avatar"> -->
     </div>
-    <!-- About me -->
+    <!-- ABOUT -->
     <div class="container">
       <h1>About me</h1>
       <p style="text-align: justify;">
@@ -87,28 +94,28 @@
     <!-- Education -->
     <div class="container">
       <h1>Education</h1>
-        <ul>
-          <li>
+        <ul class="subway-ul">
+          <li class="subway-il">
             <div style="padding-left: 15px;">
               <p class="date">2020 - 2022</p>
               <p class="company">Ecole42</p>
-              <p class="place"><i class="fa-solid fa-location-dot"></i></i> Paris</p>
+              <p class="place"><i class="fa-solid fa-location-dot"></i> Paris</p>
               <p class="description">Information Technology</p>
             </div>
           </li>
-          <li>
+          <li class="subway-il">
             <div style="padding-left: 20px;">
               <p class="date">2012 - 2018</p>
               <p class="company">ESSCA Business School</p>
-              <p class="place"><i class="fa-solid fa-location-dot"></i></i> Boulogne-Billancourt</p>
+              <p class="place"><i class="fa-solid fa-location-dot"></i> Boulogne-Billancourt</p>
               <p class="description">Master 2 Bank & Financial Engineering</p>
             </div>
           </li>
-          <li>
+          <li class="subway-il">
             <div style="padding-left: 20px;">
               <p class="date">2009 - 2012</p>
               <p class="company">Francs-Bourgeois</p>
-              <p class="place"><i class="fa-solid fa-location-dot"></i></i> Paris</p>
+              <p class="place"><i class="fa-solid fa-location-dot"></i> Paris</p>
               <p class="description">French Baccalaureate</p>
             </div>
           </li>
@@ -117,81 +124,79 @@
     <!-- Experience -->
     <div class="container">
       <h1>Experience</h1>
-        <ul>
-          <li>
+        <ul class="subway-ul">
+          <li class="subway-il">
             <div style="padding-left: 15px;">
               <p class="date">Jan 2019 - Jan 2020</p>
               <p class="company">FIPACO</p>
-              <p class="place"><i class="fa-solid fa-location-dot"></i></i> Paris</p>
+              <p class="place"><i class="fa-solid fa-location-dot"></i> Paris</p>
               <p class="mission">Real Estate Lending Consultant</p>
-              <p class="mission">- Meetings with clients (real estate companies, real estate professionals, family offices).</p>
-              <p class="mission">- Setting up complex real estate financing packages (acquisition, refinancing, debt restructuring) in close collaboration with banking partners.</p>
-              <p class="mission">- Management of the client portfolio. </p>
+              <ul class="mission-ul">
+                <li>Meetings with clients (real estate companies, real estate professionals, family offices).</li>
+                <li>Setting up complex real estate financing packages (acquisition, refinancing, debt restructuring) in close collaboration with banking partners.</li>
+                <li>Management of the client portfolio.</li>
+              </ul>
             </div>
           </li>
-          <li>
+          <li class="subway-il">
             <div style="padding-left: 15px;">
               <p class="date">Sept 2018 - Dec 2018</p>
               <p class="company">HeyTom</p>
-              <p class="place"><i class="fa-solid fa-location-dot"></i></i> Paris</p>
+              <p class="place"><i class="fa-solid fa-location-dot"></i> Paris</p>
               <p class="mission">Account Relationship Manager</p>
-              <p class="mission">- Follow-up and care of the customer relationship.</p>
-              <p class="mission">- Reporting and analysis of clients' financial results.</p>
+              <ul class="mission-ul">
+                <li>Follow-up and care of the customer relationship.</li>
+                <li>Reporting and analysis of clients' financial results.</li>
+              </ul>
             </div>
           </li>
-          <li>
+          <li class="subway-il">
             <div style="padding-left: 15px;">
               <p class="date">Feb 2018 - July 2018</p>
               <p class="company">Pretto</p>
-              <p class="place"><i class="fa-solid fa-location-dot"></i></i> Paris</p>
+              <p class="place"><i class="fa-solid fa-location-dot"></i> Paris</p>
               <p class="mission">Sales and Account Manager</p>
-              <p class="mission">- Management of prospect/client portfolios.</p>
-              <p class="mission">- Project analysis, presentation and negotiation with banks.</p>
+              <ul class="mission-ul">
+                <li>Management of prospect/client portfolios.</li>
+                <li>Project analysis, presentation and negotiation with banks.</li>
+              </ul>
             </div>
           </li>
-          <li>
+          <li class="subway-il">
             <div style="padding-left: 15px;">
               <p class="date">Mars 2017 - August 2017</p>
               <p class="company">Filauri</p>
-              <p class="place"><i class="fa-solid fa-location-dot"></i></i> Paris</p>
+              <p class="place"><i class="fa-solid fa-location-dot"></i> Paris</p>
               <p class="mission">Real Estate Investment Analyst (Intern)</p>
-              <p class="mission">- Sourcing and analysis of future investments.</p>
-              <p class="mission">- Follow-up of the acquisition process (Negotiation with the seller, Relationship with the banks).</p>
-              <p class="mission">- Implementation of the investment strategy.</p>
-              <p class="mission">- Management of existing assets.</p>
-              <p class="mission">- Implementation and management of Coworking spaces.</p>
-            </div>
+              <ul class="mission-ul">
+                <li>Sourcing and analysis of future investments.</li>
+                <li>Follow-up of the acquisition process (Negotiation with the seller, Relationship with the banks).</li>
+                <li>Implementation of the investment strategy.</li>
+                <li>Management of existing assets.</li>
+                <li>Implementation and management of Coworking spaces.</li>
+              </ul>
+          </div>
           </li>
-          <li>
+          <li class="subway-il">
             <div style="padding-left: 15px;">
               <p class="date">Sept 2016 - Feb 2017</p>
               <p class="company">BNPP</p>
-              <p class="place"><i class="fa-solid fa-location-dot"></i></i> Paris</p>
+              <p class="place"><i class="fa-solid fa-location-dot"></i> Paris</p>
               <p class="mission">Loan Structuring (Intern)</p>
-              <p class="mission">- Recommending relevant investment/financing solutions to wealthy clients and their companies.</p>
-              <p class="mission">- Participating in the technical and financial aspects of all financing operations.</p>
+              <ul class="mission-ul">
+                <li>Recommending relevant investment/financing solutions to wealthy clients and their companies.</li>
+                <li>Participating in the technical and financial aspects of all financing operations.</li>
+              </ul>
             </div>
           </li>
         </ul>
     </div>
-
-    <footer style="height: 5vh; color: #212529; padding-bottom: 1vh; font-size: 10px; text-align: center; display: flex; flex-direction: column; justify-content: end;">
+    <footer>
       &copy; Matthieu L. - All Rights Reserved
     </footer>
-  <!--Scripts-->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/626e2e0fb0d10b6f3e702154/1g24ro7ue';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/changeTheme.js"></script>
+    <script src="js/tawk.js"></script>
+    <script src="js/changeLogoNet.js"></script>
   </body>
 </html>

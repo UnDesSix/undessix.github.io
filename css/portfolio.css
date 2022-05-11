@@ -1,0 +1,60 @@
+/* PORTFOLIO */
+.label {
+  color: var(--color-1);
+  height: 22px;
+  border-radius: 5%;
+  text-align: center;
+  font-weight: bold;
+  font-size: small;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 5px;
+  min-width: 80px;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+}
+.labels-container {
+  display: flex;
+  flex-direction: row;
+}
+.labels-container #py {
+  background-color: #f2c83f;
+}
+.labels-container #ts {
+  background-color: #2f73bc9c;
+}
+.labels-container #postgres {
+  background-color: #c9cfa9;
+}
+.labels-container #docker {
+  background-color: #4a00585b;
+}
+.labels-container #c {
+  background-color: #808080;
+}
+.labels-container #cpp {
+  background-color: #808080a8;
+}
+.portfolio-container > p {
+  text-align: justify;
+  margin: 0;
+}
+
+.portfolio-container .project-img {
+  width: min(60vw, 540px);
+  min-width: 300px;
+}
+.project-img-container {
+  text-align: center;
+}
+
+.project-link-container {
+  margin-top: 15px;
+}
+.project-link {
+  color: var(--color-1);
+  font-size: small;
+}

@@ -1,6 +1,6 @@
 let root = document.querySelector(':root');
 
-consoleText(['Welcome :)', 'I am Matthieu ', 'Software Engineer & Web Developper'], 'text',[getComputedStyle(root).getPropertyValue("--color-7")]);
+consoleText(['Welcome :)', 'I am Matthieu ', 'Software Engineer & Web Developer'], 'text',[getComputedStyle(root).getPropertyValue("--color-7")]);
 
 function consoleText(words, id, colors) {
   var visible = true;

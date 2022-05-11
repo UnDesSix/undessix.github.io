@@ -1,0 +1,100 @@
+/* WELCOME MESSAGE */
+
+@media (max-width: 500px) {
+  .console-container {
+ 
+    font-family:Khula;
+    text-align:center;
+    font-size: min(8vw, 80px);
+    height: 30vh;
+    width: 100%;
+    display:block;
+    padding-top: 10vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: var(--color-1);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+  }
+}
+@media (min-width: 501px) {
+  .console-container {
+    font-family:Khula;
+    text-align:center;
+    font-size: min(7vw, 70px);
+    height: 50vh;
+    width: 100%;
+    display:block;
+    padding-top: 10vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: var(--color-1);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0;
+  }
+}
+.console-underscore {
+  display:inline-block;
+ position:relative;
+ top:-0.14em;
+ left:10px;
+}
+
+  /* BUTTON */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--color-1);;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: var(--color-1);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  min-height: 60px;
+  width: 30%;
+  min-width: 150px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: var(--bg-color-2);
+  background-color: var(--color-1);;
+  box-shadow: var(--color-5) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.container-button {
+  text-align: center;
+}
