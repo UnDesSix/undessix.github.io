@@ -52,12 +52,11 @@ function addCookie(ckey, cvalue) {
     const valid_day = 2;
 
     var expire_date = (new Date(Date.now()+ valid_day * 24 * 60 * 60 * 1000)).toUTCString();
-    document.cookie= ckey + "=" + cvalue + ";expires=" + expire_date + "; SameSite=None; Secure";
+    document.cookie= ckey + "=" + cvalue + ";path=/" + ";expires=" + expire_date + "; SameSite=None; Secure";
  }
 
  function getCookie(ckey) {
     var match = document.cookie.match(new RegExp('(^| )' + ckey + '=([^;]+)'));
-    console.log(match);
     if (match)
         return match[2];
     return null;
