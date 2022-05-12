@@ -46,6 +46,8 @@
 
 .portfolio-container .project-img {
   min-width: 1px;
+  border: var(--color-2) solid 1px;
+  border-radius: 2px;
 }
 .project-img-container {
   margin-top: 10px;
