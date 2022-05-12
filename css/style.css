@@ -124,6 +124,11 @@ h1, p, ul, li {
   text-align: center;
 }
 
+/* IMPORTANT FOT FIXED BAR */
+.content {
+  margin-bottom: 75px;
+}
+
 /* FOOTER */
 footer {
   height: 10vh;
