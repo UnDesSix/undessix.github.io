@@ -121,7 +121,9 @@
   margin: 0;
   padding: 0;
 }
-
+.mission-ul >  li {
+  text-align: justify;
+}
 
 
 .container > div {
