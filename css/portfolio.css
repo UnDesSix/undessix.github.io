@@ -55,8 +55,17 @@
 
 .project-link-container {
   margin-top: 15px;
+  margin-bottom: 25px;
 }
 .project-link {
-  color: var(--color-1);
   font-size: small;
 }
+.link {
+  color: var(--color-1);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--color-3);
+  text-decoration: underline;
+}
+
