@@ -45,12 +45,12 @@
 }
 
 .portfolio-container .project-img {
-  width: min(60vw, 540px);
-  min-width: 300px;
+  min-width: 1px;
 }
 .project-img-container {
-  text-align: center;
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .project-link-container {
